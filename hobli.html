@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HOBLIII</title>
+</head>
+
+<body>
+    <header>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </header>
+
+    <h1>HOBLI </h1>
+    <div class="frame">
+        <button class="custom-btn btn-3"><span>HATIM</span></button>
+        <button class="custom-btn btn-6"><span>LUBAINA</span></button>
+        <!-- <button class="custom-btn btn-7"><span>Read More</span></button> -->
+        <button class="custom-btn btn-12" href="#"
+            onclick="show('popup')"><span>Click!</span><span>hover</span></button>
+    </div>
+    <!-- This is what will be included inside the popup -->
+    <div class="popup" id="popup">
+        <h3>HOBLI + LUBBU = </h3>
+        <h1>HOBLU</h1>
+        <img src="laughing-teary-eye-emoji.gif" height="150px" width="150px" class="laughing-emoji">
+        <a href="#" onclick="hide('popup')" class="s3-btn-close">X</a>
+    </div>
+    <script>
+        $ = function (id) {
+            return document.getElementById(id);
+        }
+
+        var show = function (id) {
+            $(id).style.display = 'block';
+        }
+        var hide = function (id) {
+            $(id).style.display = 'none';
+        }</script>
+</body>
+
+</html>
